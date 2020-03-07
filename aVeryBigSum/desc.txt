@@ -1,0 +1,6 @@
+link of challenge description in hackerrank.com:
+https://www.hackerrank.com/challenges/a-very-big-sum/problem
+
+I'm considering the worse situation that the result number would be
+ the greatest number in the world.
+so I converted each input numbers to string and wrote my own add function 
