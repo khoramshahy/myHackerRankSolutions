@@ -15,5 +15,6 @@ function diagonalDifference(arr) {
     var result = primary_diagonal - secondary_diagonal;
 
     return absolute(result)
-
 }
+
+diagonalDifference([[11, 2, 4], [4, 5, 6], [10, 8, -12]])
