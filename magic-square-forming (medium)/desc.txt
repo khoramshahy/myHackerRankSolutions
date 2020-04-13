@@ -1,0 +1,56 @@
+link of challenge description in hackerrank.com:
+https://www.hackerrank.com/challenges/magic-square-forming/problem
+
+refrence:
+https://mindyourdecisions.com/blog/2015/11/08/how-many-3x3-magic-squares-are-there-sunday-puzzle/
+
+solution:
+1) we have 8 set of 3 numbers that the sum of each collection is equal to same number.
+    first we want to find this same number:
+
+    we have three row that the sum of each row is equal to other tow rows.
+    if we consider the sum of each code is m, we have this equation:
+    1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 = 3m => 45 = 3m => m = 15
+
+    so we see that sum of each row and as a result sum of all  
+
+2) by finding the same number we only have 8 possible set of 3 numbers that the sum of them is 8.
+    they are:
+        1 5 9
+        1 6 8
+        2 4 9 
+        2 5 8 
+        2 6 7
+        3 4 8
+        3 5 7
+        4 5 6
+
+3) by counting the repetition of each number in the above 8 sets we see that:
+        5 is repeated 4 times.
+        each other odd nums are repeated 2 times
+        and each even nums are repeated 3 times  
+
+    so by considering the position of cell in the magic square we consider that according to the repetition of each num,
+        5 is located in the center of square
+        even nums are located in the corners
+        and odd nums are in the middle of sides
+
+4) so by finding the rules, now if we place 2 at the top right corner,
+    the only possible num to place at the bottom left corner is 8,
+    and the tow only remained even nums are 4 and 6 that can be placed in the tow remained corners.
+    one time we can place 4 at top left corner and the other time we place it at bottom right corner.
+    and each even numbers only has one cell to fit the rull(sum of each set is 15).
+
+    so by puting 2 at top right we have only tow possible magic square.
+    by doing this process for the three remained even nums we totally have
+    (4 * 2 = 8) eight magic square. they are:
+
+        2 9 4   |   2 7 6   |   8 3 4   |   8 1 6
+        7 5 3   |   9 5 1   |   1 5 9   |   3 5 7
+        6 1 8   |   4 3 8   |   6 7 2   |   4 9 2
+    __ _ __ _ __ _ __ _ __ _ __ _ __ _ __ _ __ _ __ _ __
+
+        4 9 2   |   4 3 8   |   6 1 8   |   6 7 2
+        3 5 7   |   9 5 1   |   7 5 3   |   1 5 9
+        8 1 6   |   2 7 6   |   2 9 4   |   8 3 4
+
