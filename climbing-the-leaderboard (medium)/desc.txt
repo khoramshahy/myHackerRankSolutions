@@ -1,0 +1,8 @@
+// link of challenge description in hackerrank.com:
+// https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem
+
+solution:
+ first of all all the people who have same score, have the same rank,
+so we want a Set of score array that the index + 1 of each element shows the rank of each score.
+
+after that we can find the position of the alice's scores by binary searching on the scores
