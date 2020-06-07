@@ -1,0 +1,14 @@
+{
+  "name": "myHackerRankSolutions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:khoramshahy/myHackerRankSolutions.git",
+  "author": "Shirin Khoramhahi<shkhoramshahy@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "jest": "^26.0.1"
+  }
+}
